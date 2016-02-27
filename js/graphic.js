@@ -18,7 +18,7 @@ function set_buttons() {
 		var content = '<div class="btn-group btn-group-justified" role="group">'
 		var grattabili = biglietti_grattabili(biglietto, credito);
 
-		if (grattabili == 0) {
+		if (grattabili <= 1) {
 			content  += '<div class="btn-group" role="group" style="width: 75%">'
 		} else {
 			content  += '<div class="btn-group" role="group" style="width: 50%">'
@@ -32,9 +32,9 @@ function set_buttons() {
 
 		content    += '<div class="btn-group" role="group" style="width: 25%">'
 		if (grattabili == 0) {
-			content  += '<button type="button" class="btn btn-info gratta-uno disabled" data-id=' + i + '>'
+			content  += '<button type="button" class="btn btn-info disabled" data-id=' + i + '>'
 		} else {
-			content  += '<button type="button" class="btn btn-info gratta-uno" data-id=' + i + '>'
+			content  += '<button type="button" class="btn btn-info gratta-enne" data-id=' + i + ' data-enne=' + 1 + '>'
 		}
 		content    += "<span class='costo-biglietto badge'>"
 		content    += "1 per " + biglietto.costo
@@ -42,7 +42,7 @@ function set_buttons() {
 		content    += '</button>'
 		content    += '</div>'
 
-		if (grattabili != 0) {
+		if (grattabili > 1) {
 			content  += '<div class="btn-group" role="group" style="width: 25%">'
 			content  += '<button type="button" class="btn btn-danger gratta-enne" data-id=' + i + ' data-enne=' + grattabili + '>'
 			content  += "<span class='costo-biglietto badge'>"

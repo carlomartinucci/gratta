@@ -71,4 +71,5 @@ function parse_vincita (tipi_di_vincita) {
 
 biglietti.forEach(function (biglietto, i, a) {
   biglietto.tipi_di_vincita = parse_vincita(biglietto.tipi_di_vincita);
+  biglietto.id = i;
 });
