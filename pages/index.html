@@ -63,8 +63,13 @@
         <div class="sidebar-nav navbar-collapse">
           <ul class="nav" id="side-menu">
             <li>
-              <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Gratta</a>
+              <a href="index.html"><i class="fa fa-money fa-fw"></i> Gratta</a>
             </li>
+            <li><a href="#"><i class="fa fa-euro fa-fw"></i> Credito: <span class="credito"></span> €</a></li>
+            <li><a href="#"><i class="fa fa-ticket fa-fw"></i> Biglietti grattati: <span class="biglietti-grattati">0</span></a></li>
+            <li><a href="#"><i class="glyphicon glyphicon-fire fa-fw"></i> Euro grattati: <span class="euro-grattati">0</span> €</a></li>
+            <li><a href="#"><i class="fa fa-plus fa-fw"></i> Euro vinti: <span class="euro-vinti">0</span> €</a></li>
+            <li><a href="#"><i class="fa fa-exchange fa-fw"></i> Ritorno medio: <span class="ritorno-medio">100</span> %</a></li>
           </ul>
         </div>
         <!-- /.sidebar-collapse -->
@@ -86,7 +91,7 @@
             </div>
             <div class="panel-body">
               <figure class="highlight">
-                <pre id="output"></pre>
+                <pre class="output"></pre>
               </figure>
             </div>
             <div class="panel-footer">
@@ -99,10 +104,7 @@
         <div class="col-lg-4">
           <div class="panel panel-info">
             <div class="panel-heading">
-              <div class="credito pull-left"><span id="credito"></span> €</div>
-              <div class="grattati pull-right">
-                <span id="biglietti-grattati">0</span> biglietti (<span id="euro-grattati">0</span> €) grattati
-              </div>
+              <div class="style-credito pull-left"><span class="credito"></span> €</div>
               <div class="invisible">Ciao</div>
             </div>
             <div class="panel-body">

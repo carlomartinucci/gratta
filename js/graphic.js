@@ -1,13 +1,13 @@
 
 function prevent_empty_output() {
-	if ($("#output").html() == "") {
-		$("#output").html("Sei pronto a perdere tutti i tuoi euro?");
+	if ($(".output").html() == "") {
+		$(".output").html("Sei pronto a perdere tutti i tuoi euro?");
 	}
 }
 
 function no_money_output() {
-	if ($("#output").html().substr(0,17) != "[HAI PERSO TUTTO]") {
-		$("#output").prepend("[HAI PERSO TUTTO] Soldi esauriti... (fai un refresh della pagina ;) )<br/>");
+	if ($(".output").html().substr(0,17) != "[HAI PERSO TUTTO]") {
+		$(".output").prepend("[HAI PERSO TUTTO] Soldi esauriti... (fai un refresh della pagina ;) )<br/>");
 	}
 }
 
