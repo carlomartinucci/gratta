@@ -1,22 +1,22 @@
 function update_credito (delta) {
-	localStorage.credito = Number(localStorage.credito) + delta
-	log_credito(localStorage.credito);
+	credito += delta;
+	log_credito(credito);
 }
 
 function update_biglietti_grattati (id) {
-	localStorage.biglietti_grattati = Number(localStorage.biglietti_grattati) + 1
+	biglietti_grattati ++
 	log_biglietti_grattati(id);
 }
 
 
 function update_euro_grattati (delta) {
-	localStorage.euro_grattati = Number(localStorage.euro_grattati) + delta
-	log_euro_grattati(localStorage.euro_grattati);
+	euro_grattati += delta
+	log_euro_grattati(euro_grattati);
 }
 
 function update_ritorno_medio (vincita) {
-	localStorage.euro_vinti = Number(localStorage.euro_vinti) + vincita;
-	var ritorno_medio = Number(localStorage.euro_vinti)/Number(localStorage.euro_grattati);
+	euro_vinti += vincita;
+	ritorno_medio = euro_vinti/euro_grattati;
 	log_ritorno_medio(ritorno_medio);
 }
 
