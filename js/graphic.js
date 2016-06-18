@@ -15,6 +15,30 @@ function no_money_output() {
 function set_buttons() {
 	total_content = ''
 	biglietti.forEach(function (biglietto, i, a) {
+		var content = ''
+		var grattabili = biglietti_grattabili(biglietto, credito);
+		if (grattabili == 0) {
+			content  += '<button type="button" class="btn btn-block btn-info set-gratta disabled" data-id=' + i + '>'
+		} else {
+			content  += '<button type="button" class="btn btn-block btn-info set-gratta" data-id=' + i + '>'
+		}
+		content    += "<span class='nome-biglietto'>"
+		content    += biglietto.nome
+		content    += "</span>: "
+		content    += "<span class='costo-biglietto'>"
+		content    += biglietto.costo + "€"
+		content    += "</span> "
+		content    += '</button>'
+
+		content    += '<div style="height: 2px;"></div>'
+		total_content += content
+	})
+	$('.pulsanti').html(total_content);
+}
+
+function set_buttons_old() {
+	total_content = ''
+	biglietti.forEach(function (biglietto, i, a) {
 		var content = '<div class="btn-group btn-group-justified" role="group">'
 		var grattabili = biglietti_grattabili(biglietto, credito);
 

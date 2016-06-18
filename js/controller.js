@@ -4,8 +4,18 @@ $(document).ready(function () {
   prevent_empty_output();
   set_buttons();
 
-  $('body').on("click", ".gratta-enne", function (e) {
+  /*$('body').on("click", ".gratta-enne", function (e) {
     gratta_questo_n_volte($(this).data("id"), $(this).data("enne"));
+  });*/
+  $('body').on("click", "#gratta-ora", function (e) {
+    gratta_questo_n_volte($(this).data("id"), $(this).data("enne"));
+  });
+  $('body').on("click", ".set-gratta", function (e) {
+    var id = $(this).data("id");
+    $("#gratta-ora").data("id", id);
+    var nome_biglietto = biglietti[id].nome;
+    
+    $("#gratta-ora").html("GRATTA UN " + nome_biglietto);
   });
 });
 

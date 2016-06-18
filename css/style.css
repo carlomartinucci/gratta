@@ -1,0 +1,30 @@
+.full-page {
+  min-height: calc(100vh - 50px);
+  padding: 0;
+}
+
+.scroll-y {
+  overflow-y: scroll;
+  height: inherit;
+}
+
+.panel-istruzioni {
+  height: 20vh;
+}
+.panel-scegli {
+  height: 40vh;
+}
+.panel-gratta {
+  height: 40vh;
+}
+.panel-perdi {
+  height: 20vh;
+}
+
+
+#gratta-ora {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
