@@ -11,11 +11,26 @@ function no_money_output() {
 	}
 }
 
+function set_info_tickets() {
+	var total_content = '';
+	biglietti.forEach(function(biglietto, i, a) {
+		var content = '';
+		content += '<p>';
+		content += biglietto.nome;
+		content += '. Costo: ';
+		content += biglietto.costo;
+		content += '€. Lotto: ';
+		content += biglietto.lotto;
+		content += '</p>';
+		total_content += content;
+	});
+	$('.info_tickets').html(total_content);
+}
 
 function set_buttons() {
-	total_content = ''
+	var total_content = '';
 	biglietti.forEach(function (biglietto, i, a) {
-		var content = ''
+		var content = '';
 		var grattabili = biglietti_grattabili(biglietto, credito);
 		if (grattabili == 0) {
 			content  += '<button type="button" class="btn btn-block btn-info set-gratta disabled" data-id=' + i + '>'
@@ -32,7 +47,7 @@ function set_buttons() {
 
 		content    += '<div style="height: 2px;"></div>'
 		total_content += content
-	})
+	});
 	$('.pulsanti').html(total_content);
 }
 

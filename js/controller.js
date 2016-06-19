@@ -3,6 +3,7 @@ $(document).ready(function () {
   update_euro_grattati(0);
   prevent_empty_output();
   set_buttons();
+  set_info_tickets();
 
   /*$('body').on("click", ".gratta-enne", function (e) {
     gratta_questo_n_volte($(this).data("id"), $(this).data("enne"));

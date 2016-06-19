@@ -22,4 +22,5 @@ function log_ritorno_medio (ritorno_medio) {
   ritorno_medio_logs.push(ritorno_medio);
   $(".euro-vinti").html(euro_vinti);
   $(".ritorno-medio").html((100*ritorno_medio).toFixed(3));
+  $(".ritorno-medio").html(ritorno_medio.toFixed(3));
 }

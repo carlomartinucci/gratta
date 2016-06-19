@@ -64,16 +64,19 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li>
+            <a class="page-scroll" href="#sez_info">Info</a>
+          </li>
+          <li>
             <a class="page-scroll" href="#sez_gioca">Gioca</a>
           </li>
           <li>
-            <a class="page-scroll" href="#services">I biglietti</a>
+            <a class="page-scroll" href="#sez_biglietti">I biglietti</a>
           </li>
           <li>
-            <a class="page-scroll" href="#portfolio">Statistiche di gioco</a>
+            <a class="page-scroll" href="#sez_stats">Statistiche di gioco</a>
           </li>
           <li>
-            <a class="page-scroll" href="#contact">Chi sono</a>
+            <a class="page-scroll" href="#sez_contact">Chi sono</a>
           </li>
         </ul>
       </div>
@@ -154,9 +157,98 @@
 
       </div>
     </div>
-
   </section>
 
+  <section class="bg-primary" id="sez_info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">I gratta e vinci sono fatti per perdere</h2>
+          <hr class="light">
+          <p class="text-faded">L'idea di fondo è semplice: perdi poco e potenzialmente puoi vincere tanto. La cosa importante da sapere è che in media, per ogni euro speso, il ritorno è tra i 60 e gli 80 centesimi. I gratta e vinci sono fatti bene, non ti fanno perdere tutto subito, spesso si vince qualcosa, ma alla lunga si perde sempre.</p>
+          <p class="text-faded">I dati di questi biglietti sono ufficiali, presi direttamente dal sito della Lottomatica. Per giocare al gratta e vinci, ma senza grattarsi via soldi veri.</p>
+          <a href="#sez_gioca" class="page-scroll btn btn-default btn-xl sr-button">Gratta qualche biglietto!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="sez_stats">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Statistiche di gioco</h2>
+          <hr class="primary">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
+            <h3>Credito: <span class="credito"></span>€</h3>
+            <p class="text-muted">Quanti euro puoi grattarti.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
+            <h3><span class="biglietti-grattati">0</span> biglietti - <span class="euro-grattati"></span>€</h3>
+            <p class="text-muted">Quanti biglietti e euro ti sei grattato.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
+            <h3><span class="euro-vinti">0</span>€</h3>
+            <p class="text-muted">Quanti euro hai vinto.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box">
+            <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
+            <h3><span class="ritorno-medio">0</span>€</h3>
+            <p class="text-muted">Quanto ha fruttato in media ogni euro che hai giocato.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <aside class="bg-dark">
+    <div class="container text-center">
+      <div class="call-to-action">
+        <h2>Continua a grattare!</h2>
+        <a href="#sez_gioca" class="btn btn-default btn-xl sr-button page-scroll">Gioca!</a>
+      </div>
+    </div>
+  </aside>
+
+  <section id="sez_biglietti">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">Tutti i gratta e vinci</h2>
+          <hr class="primary">
+          <div class="info_tickets"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <aside id="sez_contact" class="bg-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading">I miei progetti Github</h2>
+          <a href=".."><i class="fa fa-github fa-3x sr-contact"></i> </a>
+        </div>
+      </div>
+    </div>
+  </aside>
 
   <!-- jQuery -->
   <script src="js/jquery.js"></script>
