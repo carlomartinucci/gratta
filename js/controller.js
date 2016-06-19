@@ -9,9 +9,19 @@ $(document).ready(function () {
     gratta_questo_n_volte($(this).data("id"), $(this).data("enne"));
   });*/
   $('body').on("click", "#gratta-ora", function (e) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Gratta',
+      eventAction: 'gratta'
+    });
     gratta_questo_n_volte($(this).data("id"), $(this).data("enne"));
   });
   $('body').on("click", ".set-gratta", function (e) {
+    ga('send', {
+      hitType: 'event',
+      eventCategory: 'Gratta',
+      eventAction: 'setta'
+    });
     var id = $(this).data("id");
     $("#gratta-ora").data("id", id);
     var nome_biglietto = biglietti[id].nome;
